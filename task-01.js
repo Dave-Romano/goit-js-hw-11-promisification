@@ -1,6 +1,8 @@
 const delay = (ms) => {
   const promise = new Promise((resolve) => {
-    resolve(ms);
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
   }, ms);
   return promise;
 };
