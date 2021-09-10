@@ -3,7 +3,7 @@ const delay = (ms) => {
     setTimeout(() => {
       resolve(ms);
     }, ms);
-  }, ms);
+  });
   return promise;
 };
 
